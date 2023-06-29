@@ -119,7 +119,57 @@ function onSnapEnd () {
   board.position(game.fen())
 }
 
+  // function convertMoveNotatation(move){
+  //   const moveArr = move.split('')
+  //   if (!moveArr.includes('-')){//not e2-e4 therefore is ''
+  //     moveArr = moveArr.filter(el => (['+','x','#'].includes(el)?'':el))
 
+  //   }
+  // }
+
+  // function getSquarePixelPosition(square) {
+  //   const row = 8 - parseInt(square.charAt(1));
+  //   const col = square.charCodeAt(0) - 97;
+  //   const x = col * 50;
+  //   const y = row * 50;
+  //   return [x, y];
+  // }
+
+  // function getPiecesPositions(piece) {
+  //   const places = []
+  //   const curFen = game.fen()
+  //   const numOfPieces = curFen.split(piece).length-1
+  //   if (numOfPieces <= 0){
+  //     throw new Error('piece is not on board')
+  //   } 
+  //   const curFenArr = curFen.split('/')
+  
+  //   for (let i=0; i < curFenArr.length; i++){
+  
+  //     let curRow = curFenArr[i]
+  //     const currentRowArr = curRow.split('')
+  //     const colPos = currentRowArr.map((element, index) => element === piece ? index : -1).filter(index => index !== -1);
+  //     for (let item of colPos){
+  //       if (0 <= item && item <= 7){
+  //         let dist = 0
+          
+  //         for (let x=0; x < currentRowArr.length; x++){
+  //           if (x<item){
+  //             if (!isNaN(currentRowArr[x])){
+  //               dist+=parseInt(currentRowArr[x])
+  //             } else {
+  //             dist++
+  //             }
+  //           } 
+  //         }
+  //         const letter = String.fromCharCode(97+dist)
+  //         const num = 8-i
+  //         places.push(letter+num)
+  //       }
+  //     }
+  //   }
+  //   return places
+  // }  
 
 
 var config = {
